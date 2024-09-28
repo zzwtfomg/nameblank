@@ -54,14 +54,17 @@ function App() {
                 }}
               />
             </Card>
+            <div className="text-white text-center text-sm mt-12 mb-2">
+              June Runway Looks
+            </div>
             {[1, 2, 3].map((rowNum) => (
               <div key={rowNum} className="w-full max-w-6xl mb-2">
-                <h2 className="text-2xl text-white mb-6 mt-8 text-center">{rowNum}</h2>
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-                  {[1, 2, 3].map((colNum) => (
+                <h2 className="text-sm text-white mb-6 mt-8 text-center">{rowNum}</h2>
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                  {[1, 2].map((colNum) => (
                     <Card key={colNum} className="overflow-hidden">
                       <img
-                        src={`/col1/img${(rowNum - 1) * 3 + colNum}.jpg`}
+                        src={`/col1/img${(rowNum - 1) * 2 + colNum}.jpg`}
                         alt={`Image ${(rowNum - 1) * 3 + colNum}`}
                         className="h-full w-full object-cover"
                       />
