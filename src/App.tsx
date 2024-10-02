@@ -30,11 +30,13 @@ function App() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-80 z-10 p-4 flex justify-between items-center">
-      <Link to="/about" className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition-colors text-base">
+        <Link to="/about" className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition-colors text-base">
           About
         </Link>
         <div className="text-2xl text-white flex-grow text-center menlo">nameblank</div>
-        <div className="w-24"></div>
+        <Link to="/gallery" className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 transition-colors text-base">
+          Gallery
+        </Link>
       </header>
       <div className="relative menlo pt-16">
         <div className="">
