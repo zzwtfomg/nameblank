@@ -12,9 +12,9 @@ function Gallery() {
       </header>
       <div className="flex flex-col items-center justify-center min-h-screen pt-16">
         <div className="text-center max-w-2xl menlo font-light">
-          <p className="text-lg mb-3">This is the gallery page. Here you can view various clothing items and designs.</p>
-          <p className="text-lg mb-3">Each piece showcases unique craftsmanship and attention to detail, reflecting the philosophy of creating clothes that truly feel like an extension of oneself.</p>
-          <p className="text-lg mb-3">Browse through the collection to see how unisex designs can be tailored to express individual style and personality.</p>
+          <p className="text-lg mb-3">coming soon!</p>
+          <p className="text-lg mb-3">coming soon!</p>
+          <p className="text-lg mb-3">coming soon!</p>
         </div>
       </div>
     </>
