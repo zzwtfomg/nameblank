@@ -6,7 +6,7 @@ import "./index.css";
 import { Toaster } from "./components/ui/sonner.tsx";
 import { Analytics } from "@vercel/analytics/react";
 import About from "@/About.tsx";
-import Gallery from "@/Gallery.tsx";  // Add this import
+import Gallery from "@/Gallery.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/gallery",  // Add this new route
+    path: "/gallery",
     element: <Gallery />,
   },
 ]);
