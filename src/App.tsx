@@ -29,24 +29,29 @@ function App() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 bg-gray-100 z-10">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="w-1/3 flex justify-start">
-            <Link to="/about" className="text-gray-800 hover:text-black transition-colors text-base font-medium">
-              <span className="border-b-2 border-transparent hover:border-black pb-1 menlo">About</span>
-            </Link>
-          </div>
-          <div className="w-1/3 flex justify-center">
-            <div className="text-2xl text-gray-900 font-extrabold tracking-tight menlo">nameblank</div>
-          </div>
-          <div className="w-1/3 flex justify-end">
-            <Link to="/gallery" className="text-gray-800 hover:text-black transition-colors text-base font-medium">
-              <span className="border-b-2 border-transparent hover:border-black pb-1 menlo">Gallery</span>
-            </Link>
+      <header className="fixed top-7 left-0 right-0 z-10">
+        <div className="container mx-auto px-6">
+          <div className="bg-gray-100 rounded-full px-6 py-2 flex justify-between items-center">
+            <div className="w-1/3 flex justify-start">
+              <Link to="/about" className="text-gray-800 hover:text-black transition-colors text-base font-medium">
+                <span className="border-b-2 border-transparent hover:border-black pb-1 menlo">About</span>
+              </Link>
+            </div>
+            <div className="w-1/3 flex justify-center">
+              <div className="text-2xl text-gray-900 font-extrabold tracking-tight menlo">nameblank</div>
+            </div>
+            <div className="w-1/3 flex justify-end">
+              <Link to="/gallery" className="text-gray-800 hover:text-black transition-colors text-base font-medium">
+                <span className="border-b-2 border-transparent hover:border-black pb-1 menlo">Gallery</span>
+              </Link>
+            </div>
           </div>
         </div>
       </header>
-      <div className="relative menlo pt-16">
+      <div className="relative menlo pt-24">
+        <div className="text-center mb-8 text-white">
+          <h1 className="text-white text-center text-lg mt-6 mb-2 menlo">Name Blank (Fill Here) June Runway</h1>
+        </div>
         <div className="">
           <div className="flex flex-col items-center">
             <Card>
@@ -65,7 +70,7 @@ function App() {
               />
             </Card>
             <div className="text-white text-center text-sm mt-12 mb-2">
-              June 2024 Collection
+              Looks
             </div>
             {[1, 2, 3].map((rowNum) => (
               <div key={rowNum} className="w-full max-w-6xl mb-2">
