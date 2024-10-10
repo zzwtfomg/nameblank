@@ -5,6 +5,7 @@ import Header from "./components/Header";
 
 function App() {
   const [videoWidth, setVideoWidth] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     handleResize();
@@ -20,11 +21,13 @@ function App() {
       height: window.innerHeight,
     };
 
-    if (newWindowDimensions.width < 1024) {
+    if (newWindowDimensions.width < 1200) {
       setVideoWidth(newWindowDimensions.width - 16);
     } else {
       setVideoWidth(newWindowDimensions.width * 0.7);
     }
+
+    setIsMobile(newWindowDimensions.width < 500);
   };
 
   return (
@@ -38,7 +41,7 @@ function App() {
           <div className="flex flex-col items-center">
             <Card>
               <ReactPlayer
-                playing
+                playing={!isMobile}
                 loop
                 muted={true}
                 url="col1/video1.mp4"
