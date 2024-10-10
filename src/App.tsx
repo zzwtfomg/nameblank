@@ -31,7 +31,7 @@ function App() {
     } else {
       setVideoWidth(newWindowDimensions.width * 0.7);
     }
-    setIsMobile(checkMobile());
+    setIsMobile(checkMobile() && newWindowDimensions.width < 500);
   };
 
   return (
