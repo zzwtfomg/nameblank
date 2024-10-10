@@ -42,12 +42,12 @@ function App() {
             <Card>
               <ReactPlayer
                 playing={!isMobile}
-                loop
+                loop={!isMobile}
                 muted={true}
                 url="col1/video1.mp4"
                 height={(videoWidth * 9) / 16}
                 width={videoWidth}
-                controls={false}
+                controls={isMobile}
                 style={{
                   objectFit: "cover",
                   transition: "all .3s",
