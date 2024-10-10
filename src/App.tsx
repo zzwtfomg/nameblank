@@ -7,6 +7,11 @@ function App() {
   const [videoWidth, setVideoWidth] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
+  const checkMobile = () => {
+    const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+    return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase());
+  };
+
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -26,8 +31,7 @@ function App() {
     } else {
       setVideoWidth(newWindowDimensions.width * 0.7);
     }
-
-    setIsMobile(newWindowDimensions.width < 500);
+    setIsMobile(checkMobile());
   };
 
   return (
