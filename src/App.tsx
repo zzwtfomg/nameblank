@@ -2,6 +2,7 @@ import { Card } from "@/components/card";
 import { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import Header from "./components/Header";
+import Footer from "./components/footer";
 
 function App() {
   const [videoWidth, setVideoWidth] = useState(0);
@@ -39,7 +40,8 @@ function App() {
       <Header />
       <div className="relative menlo pt-24">
         <div className="text-center mb-8 text-white">
-          <h1 className="text-white text-center text-lg mt-6 mb-2 menlo">Name Blank (Fill Here) June Runway</h1>
+          
+          <h1 className="text-white text-center text-lg mt-6 mb-2 menlo">June Runway</h1>
         </div>
         <div className="">
           <div className="flex flex-col items-center">
@@ -80,6 +82,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

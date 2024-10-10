@@ -1,4 +1,5 @@
 
+import Footer from "./components/footer";
 import Header from "./components/Header";
 
 function Gallery() {
@@ -18,6 +19,7 @@ function Gallery() {
           <p className="text-lg mb-3 text-white">Coming Soon!</p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

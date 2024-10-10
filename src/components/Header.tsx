@@ -1,6 +1,25 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Sidebar from "./Sidebar";
 
 function Header() {
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768); // Adjust this breakpoint as needed
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  if (isSmallScreen) {
+    return <Sidebar />;
+  }
+
   return (
     <header className="fixed top-7 left-0 right-0 z-10">
       <div className="container mx-auto px-6">
