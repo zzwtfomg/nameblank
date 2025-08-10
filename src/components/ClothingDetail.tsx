@@ -69,7 +69,7 @@ function ClothingDetail() {
     }
   };
 
-  const item = clothingDetails[id as keyof typeof clothingDetails];
+  const item = clothingDetails[id as '1' | '2' | '3' | '4'];
 
   if (!item) {
     return (
