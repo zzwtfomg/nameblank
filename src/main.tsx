@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import App from "./App.tsx";
 import About from "@/About.tsx";
 import Gallery from "@/Gallery.tsx";
+import ClothingDetail from "@/components/ClothingDetail.tsx";
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
     {
       path: "/gallery",
       element: <Gallery />,
+    },
+    {
+      path: "/clothing/:id",
+      element: <ClothingDetail />,
     },
 ]);
 
