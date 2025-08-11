@@ -11,7 +11,7 @@ function ClothingDetail() {
     1: {
       name: "White Tee",
       category: "",
-      description: "enter text here",
+      description: "100% cotton jersey",
       mainImage: "/col1/DSC_0451.JPG",
       additionalImages: ["/col1/white tee 1.JPG", "/col1/white tee 2.JPG", "/col1/white tee 3.JPEG", "/col1/white tee 4.JPG"],
       details: [],
@@ -20,27 +20,27 @@ function ClothingDetail() {
     2: {
       name: "blank",
       category: "",
-      description: "enter text here",
+      description: "hand sewn, made entirely of scraps from previous projects",
       mainImage: "/col1/bag front.JPG",
-      additionalImages: ["/col1/bag details 1.JPG", "/col1/bag details 2.JPG", "/col1/bag details 3.JPG", "/col1/bag details 4.JPG"],
+      additionalImages: ["/col1/sofia nice 1.JPG", "/col1/sofia nice 2.JPG", "/col1/sofia nice 3.JPG", "/col1/sofia nice 4.JPG"],
       details: [],
       price: ""
     },
     3: {
       name: "hope",
       category: "",
-      description: "enter text here",
+      description: "100% wool tweed, hand distressed",
       mainImage: "/col1/hope front.JPG",
-      additionalImages: ["/col1/hope 1.JPG", "/col1/hope 2.JPG", "/col1/hope 3.JPG"],
+      additionalImages: ["/col1/hope 1.JPG", "/col1/hope 2.JPG", "/col1/hope 3.JPG", "/col1/hope 5.jpg"],
       details: [],
       price: ""
     },
     4: {
       name: "COMING SOON",
       category: "",
-      description: "enter text here",
+      description: "my dog Draco",
       mainImage: "/col1/img4.jpg",
-      additionalImages: ["/col1/draco 1.jpeg", "/col1/draco 2.jpeg", "/col1/draco 3.jpeg"],
+      additionalImages: ["/col1/draco 1.jpeg", "/col1/draco 2.jpeg", "/col1/draco 3.jpeg", "/col1/draco erewhon.jpeg"],
       details: [],
       price: ""
     }
@@ -80,11 +80,7 @@ function ClothingDetail() {
           <div className="max-w-6xl mx-auto">
             {/* Cards at top center */}
             <div className="flex justify-center mb-16">
-              <div className={`grid gap-6 ${
-                item.additionalImages.length === 3 
-                  ? 'grid-cols-1 max-w-xs' 
-                  : 'grid-cols-2 max-w-2xl'
-              }`}>
+              <div className="grid grid-cols-2 gap-8 max-w-6xl">
                 {item.additionalImages.map((img, index) => (
                   <Card key={index} className="overflow-hidden">
                     <img
@@ -98,12 +94,8 @@ function ClothingDetail() {
             </div>
 
             {/* Text below with moderate spacing */}
-            <div className={`${
-              item.additionalImages.length === 3 
-                ? 'text-left ml-16' 
-                : 'text-center'
-            }`}>
-              <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+            <div className="text-center">
+              <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
                 {item.description}
               </p>
             </div>
