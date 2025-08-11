@@ -45,7 +45,8 @@ function Gallery() {
         <div className="text-center max-w-6xl menlo font-light p-8">
           <h1 className="text-3xl mb-8 text-white font-medium">Fashion Collection</h1>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl ml-16">
+          <div className="flex flex-col items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
             {clothingItems.map((item) => (
               <Link 
                 key={item.id} 
@@ -67,6 +68,7 @@ function Gallery() {
                 </div>
               </Link>
             ))}
+            </div>
           </div>
         </div>
       </div>

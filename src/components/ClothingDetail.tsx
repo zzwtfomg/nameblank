@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./footer";
+import { Card } from "@/components/card";
 
 function ClothingDetail() {
   const { id } = useParams();
@@ -85,13 +86,13 @@ function ClothingDetail() {
                   : 'grid-cols-2 max-w-2xl'
               }`}>
                 {item.additionalImages.map((img, index) => (
-                  <div key={index} className="aspect-square overflow-hidden rounded-lg">
-                    <img 
-                      src={img} 
+                  <Card key={index} className="overflow-hidden">
+                    <img
+                      src={img}
                       alt={`${item.name} view ${index + 1}`}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="h-full w-full object-cover"
                     />
-                  </div>
+                  </Card>
                 ))}
               </div>
             </div>
