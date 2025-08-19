@@ -26,6 +26,30 @@ function Gallery() {
     },
     {
       id: 4,
+      name: "S Shirt",
+      image: "/col1/sshirt front.jpeg",
+      category: ""
+    },
+    {
+      id: 5,
+      name: "C Jeans",
+      image: "/col1/jeans front.jpeg",
+      category: ""
+    },
+    {
+      id: 6,
+      name: "G Hoodie",
+      image: "/col1/g hoodie front.png",
+      category: ""
+    },
+    {
+      id: 7,
+      name: "history",
+      image: "/col1/history front.jpeg",
+      category: ""
+    },
+    {
+      id: 8,
       name: "COMING SOON",
       image: "/col1/sofia bag front 2.png",
       category: ""

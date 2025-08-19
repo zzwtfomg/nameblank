@@ -36,6 +36,42 @@ function ClothingDetail() {
       price: ""
     },
     4: {
+      name: "S Shirt",
+      category: "",
+      description: "my dog Draco",
+      mainImage: "/col1/sshirt front.jpeg",
+      additionalImages: ["/col1/sshirt 1.jpg", "/col1/sshirt 2.jpg"],
+      details: [],
+      price: ""
+    },
+    5: {
+      name: "C Jeans",
+      category: "",
+      description: "100% cotton jersey",
+      mainImage: "/col1/jeans front.jpeg",
+      additionalImages: ["/col1/jeans detail 1.jpeg", "/col1/jeans detail 2.jpeg", "/col1/jeans detail 3.jpeg", "/col1/jeans detail 4.jpeg"],
+      details: [],
+      price: ""
+    },
+    6: {
+      name: "G Hoodie",
+      category: "",
+      description: "hand sewn, made entirely of scraps from previous projects",
+      mainImage: "/col1/g hoodie front.png",
+      additionalImages: ["/col1/g hoodie 1.jpg", "/col1/g hoodie 2.jpg", "/col1/g hoodie 3.jpg", "/col1/g hoodie 4.jpg"],
+      details: [],
+      price: ""
+    },
+    7: {
+      name: "history",
+      category: "",
+      description: "100% wool tweed, hand distressed",
+      mainImage: "/col1/history front.jpeg",
+      additionalImages: ["/col1/history 1!.jpeg", "/col1/history 1.jpeg", "/col1/history 2.jpeg", "/col1/history 4.jpeg"],
+      details: [],
+      price: ""
+    },
+    8: {
       name: "COMING SOON",
       category: "",
       description: "my dog Draco",
@@ -46,7 +82,7 @@ function ClothingDetail() {
     }
   };
 
-  const item = clothingDetails[id as '1' | '2' | '3' | '4'];
+  const item = clothingDetails[id as '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8'];
 
   if (!item) {
     return (
