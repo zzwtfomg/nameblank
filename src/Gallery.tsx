@@ -51,7 +51,7 @@ function Gallery() {
     {
       id: 8,
       name: "COMING SOON",
-      image: "/col1/sofia bag front 2.png",
+      image: "/col1/sofia bag front1.jpeg",
       category: ""
     }
   ];
