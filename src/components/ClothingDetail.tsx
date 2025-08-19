@@ -54,20 +54,20 @@ function ClothingDetail() {
       price: ""
     },
     6: {
-      name: "G Hoodie",
-      category: "",
-      description: "100% wool not sure what type honestly",
-      mainImage: "/col1/g hoodie front.png",
-      additionalImages: ["/col1/g hoodie 1.jpg", "/col1/g hoodie 2.jpg", "/col1/g hoodie 3.jpg", "/col1/g hoodie 4.jpg"],
-      details: [],
-      price: ""
-    },
-    7: {
       name: "history",
       category: "",
       description: "100% wool knit",
       mainImage: "/col1/history front.jpeg",
       additionalImages: ["/col1/history 1!.jpeg", "/col1/history 1.jpeg", "/col1/history 2.jpeg", "/col1/history 4.jpeg"],
+      details: [],
+      price: ""
+    },
+    7: {
+      name: "hoodie",
+      category: "",
+      description: "100% wool not sure what type honestly",
+      mainImage: "/col1/g hoodie front.png",
+      additionalImages: ["/col1/g hoodie 1.jpg", "/col1/g hoodie 2.jpg", "/col1/g hoodie 3.jpg", "/col1/g hoodie 4.jpg"],
       details: [],
       price: ""
     },

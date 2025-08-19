@@ -38,14 +38,14 @@ function Gallery() {
     },
     {
       id: 6,
-      name: "hoodie",
-      image: "/col1/g hoodie front.png",
+      name: "history",
+      image: "/col1/history front.jpeg",
       category: ""
     },
     {
       id: 7,
-      name: "history",
-      image: "/col1/history front.jpeg",
+      name: "hoodie",
+      image: "/col1/g hoodie front.png",
       category: ""
     },
     {
