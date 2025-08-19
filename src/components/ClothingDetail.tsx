@@ -38,7 +38,7 @@ function ClothingDetail() {
     4: {
       name: "S Shirt",
       category: "",
-      description: "my dog Draco",
+      description: "first layer is cotton, second layer is lace",
       mainImage: "/col1/sshirt front.jpeg",
       additionalImages: ["/col1/sshirt 1.jpg", "/col1/sshirt 2.jpg"],
       details: [],
@@ -47,16 +47,16 @@ function ClothingDetail() {
     5: {
       name: "C Jeans",
       category: "",
-      description: "100% cotton jersey",
+      description: "upcycled jeans, distressed and then machine darned",
       mainImage: "/col1/jeans front.jpeg",
-      additionalImages: ["/col1/jeans detail 1.jpeg", "/col1/jeans detail 2.jpeg", "/col1/jeans detail 3.jpeg", "/col1/jeans detail 4.jpeg"],
+      additionalImages: ["/col1/jeans detail 1.jpeg", "/col1/jeans detail 2.jpeg", "/col1/jeans detail 3.jpeg"],
       details: [],
       price: ""
     },
     6: {
       name: "G Hoodie",
       category: "",
-      description: "hand sewn, made entirely of scraps from previous projects",
+      description: "100% wool not sure what type honestly",
       mainImage: "/col1/g hoodie front.png",
       additionalImages: ["/col1/g hoodie 1.jpg", "/col1/g hoodie 2.jpg", "/col1/g hoodie 3.jpg", "/col1/g hoodie 4.jpg"],
       details: [],
@@ -65,7 +65,7 @@ function ClothingDetail() {
     7: {
       name: "history",
       category: "",
-      description: "100% wool tweed, hand distressed",
+      description: "100% wool knit",
       mainImage: "/col1/history front.jpeg",
       additionalImages: ["/col1/history 1!.jpeg", "/col1/history 1.jpeg", "/col1/history 2.jpeg", "/col1/history 4.jpeg"],
       details: [],
@@ -131,7 +131,7 @@ function ClothingDetail() {
 
             {/* Text below with moderate spacing */}
             <div className="text-center">
-              <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
+              <p className="text-white text-lg leading-relaxed max-w-2xl mx-auto">
                 {item.description}
               </p>
             </div>

@@ -38,7 +38,7 @@ function Gallery() {
     },
     {
       id: 6,
-      name: "G Hoodie",
+      name: "hoodie",
       image: "/col1/g hoodie front.png",
       category: ""
     },
@@ -80,7 +80,9 @@ function Gallery() {
                     <img 
                       src={item.image} 
                       alt={item.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 ${
+                        [4, 5, 7].includes(item.id) ? 'object-center' : ''
+                      }`}
                     />
                   </div>
                   <div className="p-4 text-center">

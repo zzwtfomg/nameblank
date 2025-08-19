@@ -41,7 +41,7 @@ function App() {
       <div className="relative menlo pt-24">
         <div className="text-center mb-8 text-white">
           
-          <h1 className="text-white text-center text-lg mt-6 mb-2 menlo">June Runway</h1>
+          <h1 className="text-white text-center text-lg mt-6 mb-2 menlo">June '24 Runway</h1>
         </div>
         <div className="">
           <div className="flex flex-col items-center">
